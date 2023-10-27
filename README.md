@@ -1,2 +1,2 @@
 # FS_PersonalProject
-This is my personal project for the Fullstack Academy bootcamp
+This is my personal website for the Fullstack Academy bootcamp. It contains the Home, About, and Portfolio pages.
