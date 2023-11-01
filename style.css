@@ -12,7 +12,9 @@
 #profile-pic {
   height: 300px;
 }
-
+.nav-links #home, #about, #portfolio {
+  display: inline-block;
+}
 /* Portfolio Page */
 .project-container {
   background-color: aquamarine;
