@@ -4,151 +4,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>About Page</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./javascript.js"></script>
   <link rel="stylesheet" href="./about.html">
   <link rel="stylesheet" href="./portfolio.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Signika&family=Signika+Negative&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="about-body">
   <!-- Navigation Bar -->
-  <nav>
+  <nav class="nav-bar">
+    <div class="nav-logo">
+      <!-- <p class="logo">Zach Fullmer</p> -->
+      <img class="logo" src="./images/zf_logo2.png" alt="Zach Fullmer Logo">
+    </div>
     <div class="nav-links">
-      <button id="Home" onclick="homeClicked()"><a href="./index.html">Home</a></button>
-      <button id="about" onclick="aboutClicked()"><a href="./about.html">About</a></button>
-      <button id="portfolio" onclick="portfolioClicked()"><a href="./portfolio.html">Portfolio</a></button>
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./portfolio.html">Portfolio</a>
     </div>
   </nav>
   <!-- Header Quote -->
-  <div>
-    <h1 class="page-headers">I'm just myself. That's the best way to put it.</h1>
+  <div class="header">
+    <h1 class="page-headers">What can I say, I'm a man of many passions!</h1>
   </div>
   <hr>
   <!-- About Me Content Container -->
-  <div>
-    <!-- Education Section -->
-    <section>
-      <h2>Education</h2>
-      <table cellspacing="10">
-        <tr>
-          <th>School</th>
-          <th>Program</th>
-          <th>Year(s)</th>
-        </tr>
-        <tr>
-          <td>Salem Hills High School</td>
-          <td>GED</td>
-          <td>2010-2013</td>
-        </tr>
-        <tr>
-          <td>Utah Valley University</td>
-          <td>Excercise Science</td>
-          <td>2018-2020</td>
-        </tr>
-        <tr>
-          <td>Ensign College</td>
-          <td>Software Engineering</td>
-          <td>2021-Current</td>
-        </tr>
-      </table>
-    </section>
-    <br>
-    <hr>
-    <!-- Work Experience Section -->
-    <section>
-      <h2>Work Experience</h2>
-      <table cellspacing="10">
-        <th>Year(s)</th>
-        <th>Work</th>
-        <tr>
-          <td>2020-2021</td>
-          <td>Content Product Associate, Ancestry.com</td>
-        </tr>
-        <tr>
-          <td>2021</td>
-          <td>Content Data Specialist, Ancestry.com</td>
-        </tr>
-        <tr>
-          <td>2021-Current</td>
-          <td>Supervisor, Content Data Structure Team</td>
-        </tr>
-      </table>
-    </section>
-    <hr>
-    <!-- Skills Section -->
-    <section>
-      <h2>Skills</h2>
-      <table cellspacing="10">
-        <tr>
-          <td>
-            <table>
-              <tr>
-                <td>MS Office Suite</td>
-                <td>⭐⭐⭐⭐</td>
-              </tr>
-              <tr>
-                <td>MS SQL Server</td>
-                <td>⭐⭐⭐⭐</td>
-              </tr>
-            </table>
-          </td>
-          <td>
-            <table>
-              <tr>
-                <td>Team Management</td>
-                <td>⭐⭐⭐</td>
-              </tr>
-              <tr>
-                <td>Agile Project Management</td>
-                <td>⭐⭐⭐</td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </section>
-    <hr>
+  <div class="about-content">
     <!-- Hobbies Section -->
-    <section>
-      <h2>Hobbies</h2>
-      <p>
-      <ol>
-        <li>Sports:
-          <ul>
-            <li>Baseball</li>
-            <li>Football</li>
-          </ul>
-        </li>
-        <li>Weightlifting</li>
-        <li>Games:
-          <ul>
-            <li>Card/Board:
-              <ul>
-                <li>Phase 10</li>
-                <li>Dutch Blitz</li>
-                <li>Skull King</li>
-                <li>Villainous</li>
-                <li>Settlers of Catan</li>
-              </ul>
-            </li>
-            <li>Video:
-              <ul>
-                <li>Halo Infinite</li>
-                <li>Call of Duty: Modern Warfare or Black Ops I</li>
-                <li>Mario Kart</li>
-                <li>Super Smash Bros</li>
-                <li>Star Wars Battlefront II</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>Learning new things, like exercise science, Java, SQL, web development, etc.</li>
-      </ol>
-      </p>
-    </section>
-
+    <div class="hobbies">
+      <h2>Sports</h2>
+      <img class="baseball" src="./images/baseball-bat-ball-solid.svg" alt="Baseball bat and ball image">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci pariatur in corporis omnis inventore. Praesentium, dicta ipsam perspiciatis aliquam pariatur perferendis cupiditate aperiam. Neque nulla exercitationem tempore blanditiis. Officiis, tenetur.</p>
+    </div>
+    <div class="hobbies">
+      <h2>Weightlifting</h2>
+      <img class="weights" src="./images/dumbbell-solid.svg" alt="Dumbbell image">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci pariatur in corporis omnis inventore. Praesentium, dicta ipsam perspiciatis aliquam pariatur perferendis cupiditate aperiam. Neque nulla exercitationem tempore blanditiis. Officiis, tenetur.</p>
+    </div>
+    <div class="hobbies">
+      <h2>Games</h2>
+      <img class="gamepad" src="./images/gamepad-solid.svg" alt="Gamepad image">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci pariatur in corporis omnis inventore. Praesentium, dicta ipsam perspiciatis aliquam pariatur perferendis cupiditate aperiam. Neque nulla exercitationem tempore blanditiis. Officiis, tenetur.</p>
+    </div>
+    <div class="hobbies">
+      <h2>Learning</h2>
+      <img class="book" src="./images/book-solid.svg" alt="Book image">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci pariatur in corporis omnis inventore. Praesentium, dicta ipsam perspiciatis aliquam pariatur perferendis cupiditate aperiam. Neque nulla exercitationem tempore blanditiis. Officiis, tenetur.</p>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <div class="footer-links-section">
+      <a class="footer-link" href="https://www.linkedin.com/in/zacharyfullmer?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOa5N82o9Q9KyfzQSXxx5xA%3D%3D/">LinkedIn</a>
+      <a class="footer-link" href="https://www.ancestry.com/">Website</a>
+      <p class="copyright">© 2023 Zach Fullmer @ Ancestry.com.</p>
+    </div>
   </div>
 </body>
-
 </html>

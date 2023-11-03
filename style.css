@@ -1,30 +1,192 @@
 /* Website-wide CSS */
-.page-headers {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(53, 211, 158);
+body {
+  background-color: #EDF1D6;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 18pt;
+  color: #609966;
+  margin: 0px;
 }
-.nav-links {
-  background-color: rgb(4, 193, 130);
-  padding: 20px 10px;
+p {
+  font-size: 14pt;
+  color: #9DC08B;
+}
+.nav-bar {
+  background-color: #40513B;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
 }
+.nav-logo {
+  display: inline-block;
+  text-align: left;
+}
+.logo {
+  width: 45%;
+  margin: 10px 20px;
+}
+.nav-links {
+  padding: 20px 10px;
+  text-align: right;
+  display: inline-block;
+  color: #EDF1D6;
+}
+.nav-links a:link {
+  color: #EDF1D6;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-left: 10px;
+}
+.nav-links a:visited {
+  color: #EDF1D6;
+  text-decoration: none;
+}
+#ancestry {
+  color: #8bab7b;
+}
+#ancestry:hover {
+  text-decoration: #3e4b37;
+}
+h2 {
+  color:#40513B;
+}
+div.bottom-container{
+  margin-top: 5%;
+  background-color:#3e4b37;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  line-height: 2;
+}
+.footer-links-section {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+}
+.footer-link {
+  color:#609966;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color:#9DC08B;
+}
+.copyright {
+  color: #EDF1D6;
+  font-size: .75rem;
+  margin-left: 25%;
+  width: 50%;
+  text-align: center;
+}
+
 /* Home Page */
 #profile-pic {
   height: 300px;
 }
-.nav-links #home, #about, #portfolio {
-  display: inline-block;
+.profile {
+  width: 300px;
+  margin: 50px auto;
 }
+.message {
+  width: 50%;
+  margin: 30px 25% 8% 25%;
+  text-align: center;
+}
+.quote {
+  width: 75%;
+  margin: 0px 12.5% 10% 12.5%;
+  text-align: center;
+}
+.quote h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+}
+
+/* About Page */
+.about-body {
+  padding-bottom: 20px;
+}
+.header {
+  width: 90%;
+  margin-left: 5%;
+}
+.header .page-headers {
+  text-align: center;
+}
+.about-content {
+  margin: 10px 10%;
+}
+.about-content hr {
+  border-style: dashed;
+}
+.hobbies-section{
+  padding-left: 30px;
+}
+hr {
+  margin-top: 25px;
+}
+.hobbies {
+  width: 70%;
+  font-size: 16pt;
+  margin: 30px auto;
+  padding: 1em;
+}
+.baseball, .gamepad {
+  float: right;
+  margin-right: 30px;
+  width: 20%; 
+}
+.weights, .book {
+  float: left;
+  margin-right: 30px;
+  width: 20%; 
+}
+
 /* Portfolio Page */
+.portfolio-body {
+  /* background-color: #8bab7b; */
+}
+.portfolio-header {
+  color: #40513B;
+  text-align: center;
+}
 .project-container {
-  background-color: aquamarine;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .project {
-  background-color:azure;
   width: 70%;
-  font-size: 14pt;
-  margin: 2em auto;
+  font-size: 16pt;
+  margin: 30px auto;
   padding: 1em;
 }
+.project-image {
+  margin: 75px auto;
+  text-align: left;
+}
+.html-image, .java-image {
+  float: left;
+  margin-right: 30px;
+  width: 20%; 
+}
+.js-image {
+  float: right;
+  margin-right: 30px;
+  width: 20%; 
+}
+hr {
+  border-style: none;
+  border-top-style: dotted; 
+  border-width: 5px;
+  width: 10%;
+  margin-top: 10px;
+}
+
+/* Colors:
+  Greens
+  Dark: 40513B
+  Medium: 609966
+  Light: 9DC08B
+  Lightest: EDF1D6
+  
+  Creams: */

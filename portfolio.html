@@ -4,55 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./javascript.js"></script>
   <link rel="stylesheet" href="./about.html">
   <link rel="stylesheet" href="./portfolio.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Signika&family=Signika+Negative&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="portfolio-body">
   <!-- Navigation Bar -->
-  <nav>
+  <nav class="nav-bar">
+    <div class="nav-logo">
+      <!-- <p class="logo">Zach Fullmer</p> -->
+      <img class="logo" src="./images/zf_logo2.png" alt="Zach Fullmer Logo">
+    </div>
     <div class="nav-links">
-      <button id="Home" onclick="homeClicked()"><a href="./index.html">Home</a></button>
-      <button id="about" onclick="aboutClicked()"><a href="./about.html">About</a></button>
-      <button id="portfolio" onclick="portfolioClicked()"><a href="./portfolio.html">Portfolio</a></button>
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./portfolio.html">Portfolio</a>
     </div>
   </nav>
   <!-- Header Section -->
   <div>
-    <h1 class="page-headers">Personal Projects</h1>
+    <h1 class="portfolio-header">Projects I Have Built</h1>
   </div>
-<hr>
+  <hr>
 <!-- Main Body for Projects -->
 <div class="project-container">
   <!-- First Project Section -->
-  <section class="project">
-    <h2>[Project Name]</h2>
-    <hr>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perferendis deleniti hic necessitatibus magnam fugiat, sit beatae, accusamus cumque reiciendis ipsa incidunt veritatis doloremque officiis omnis, ut nemo laboriosam est!
-    </p>
-  </section>
+  <div class="project">
+    <div class="project-image">
+      <img class="html-image" src="./images/code-solid.svg" alt="HTML Tag Logo">
+      <h2>[Project 1 Name]</h2>
+      <p class="pr-text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perferendis deleniti hic necessitatibus magnam fugiat, sit beatae, accusamus cumque reiciendis ipsa incidunt veritatis doloremque officiis omnis, ut nemo laboriosam est!
+      </p>     
+    </div>    
+  </div>
   <!-- Second Project Section -->
-  <section class="project">
-    <h2>[Project Name]</h2>
-    <hr>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perferendis deleniti hic necessitatibus magnam fugiat, sit beatae, accusamus cumque reiciendis ipsa incidunt veritatis doloremque officiis omnis, ut nemo laboriosam est!
-    </p>
-  </section>
+  <div class="project">
+    <div class="project-image">
+      <img class="js-image" src="./images/square-js.svg" alt="Javascript logo">
+      <h2 class="p2">[Project 2 Name]</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perferendis deleniti hic necessitatibus magnam fugiat, sit beatae, accusamus cumque reiciendis ipsa incidunt veritatis doloremque officiis omnis, ut nemo laboriosam est!
+      </p>
+    </div>
+  </div>
   <!-- Third Project Section -->
-  <section class="project">
-    <h2>[Project Name]</h2>
-    <hr>
+  <div class="project">
+    <img class="java-image" src="./images/java.svg" alt="Java logo">
+    <h2 class="p3">[Project 3 Name]</h2>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perferendis deleniti hic necessitatibus magnam fugiat, sit beatae, accusamus cumque reiciendis ipsa incidunt veritatis doloremque officiis omnis, ut nemo laboriosam est!
     </p>
-  </section>
+  </div>
 </div>
-
+<div class="bottom-container">
+  <div class="footer-links-section">
+    <a class="footer-link" href="https://www.linkedin.com/in/zacharyfullmer?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOa5N82o9Q9KyfzQSXxx5xA%3D%3D/">LinkedIn</a>
+    <a class="footer-link" href="https://www.ancestry.com/">Website</a>
+  </div>
+  <p class="copyright">© 2023 Zach Fullmer @ Ancestry.com.</p>
+</div>
 </body>
 
 </html>

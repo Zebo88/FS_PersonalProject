@@ -3,36 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zach's Website</title>
+  <title>Home Page</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./javascript.js"></script>
   <link rel="stylesheet" href="./about.html">
   <link rel="stylesheet" href="./portfolio.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Signika+Negative&family=Signika:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation Bar -->
-<nav>
+<nav class="nav-bar">
+  <div class="nav-logo">
+    <!-- <p class="logo">Zach Fullmer</p> -->
+    <img class="logo" src="./images/zf_logo2.png" alt="Zach Fullmer Logo">
+  </div>
   <div class="nav-links">
-    <button id="home" onclick="homeClicked()"><a href="./index.html">Home</a></button>
-    <button id="about" onclick="aboutClicked()"><a href="./about.html">About</a></button>
-    <button id="portfolio" onclick="portfolioClicked()"><a href="./portfolio.html">Portfolio</a></button>
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./portfolio.html">Portfolio</a>
   </div>
 </nav>
   <!-- Profile Section: Image and Descriptive information about Me -->
-  <div>
-    <table>
-      <tr>
-        <td>
-          <img id="profile-pic" src="./images/Circle Profile Pic.png" alt="My profile photo">
-        </td>
-        <td>
-          <h1 class="page-headers">Hi! My name is Zach Fullmer.</h1>
-          <p><em>Supervisor of the <b>Content Data Structure Team</b> at <a href="https://www.ancestry.com/">Ancestry.com.</a></em></p>
-          <p>I am a Leader, Data Specialist, and aspiring Software Engineer.</p>
-        </td>
-      </tr>
-    </table>
+  <div class="home-content">
+      <div class="profile">
+        <img id="profile-pic" src="./images/Circle Profile Pic.png" alt="My profile photo">
+      </div>
+      <div class="message">
+        <h1 class="page-headers">Hi! My name is Zach Fullmer.</h1>
+        <p><em>Supervisor of the <b>Content Data Structure Team</b> at <a id="ancestry" href="https://www.ancestry.com/">Ancestry.com.</a></em></p>
+        <p>I am a Leader, Data Specialist, and aspiring Software Engineer.</p>
+      </div>
+    <div class="quote">
+      <h1 class="page-headers">"I'm just myself. That's the best way to put it." -Me</h1>
+    </div>
   </div>
-  
+  <div class="bottom-container">
+    <div class="footer-links-section">
+      <a class="footer-link" href="https://www.linkedin.com/in/zacharyfullmer?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOa5N82o9Q9KyfzQSXxx5xA%3D%3D/">LinkedIn</a>
+      <a class="footer-link" href="https://www.ancestry.com/">Website</a>
+      <p class="copyright">© 2023 Zach Fullmer @ Ancestry.com.</p>
+    </div>
+  </div>
 </body>
 </html>
