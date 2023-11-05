@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./javascript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Signika+Negative&family=Signika:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <img class="logo" src="./images/zf_logo2.png" alt="Zach Fullmer Logo">
+      </div>
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+    <!-- Contact Container -->
+    <div class="content-container">
+      <div class="content-item">
+        <!-- Contact Message -->
+        <div class="content-name-image">
+          <h1>Thanks for visiting my website!</h1>
+          <p>If you would like to contact me, please leave your name and email, and I will get in touch with you within a few business days.</p>
+        </div>
+      </div>
+      <!-- Form Container -->
+      <div class="content-item">
+        <form action="./formsubmitted.html">
+          <div class="contact-inputs">
+            <!-- Name and Email -->
+            <div class="name-email">
+              <label for="name-first">First Name: </label><br>
+              <input type="text" name="name-first"><br>
+
+              <label for="name-last">Last Name: </label><br>
+              <input type="text" name="name-last"><br>
+
+              <label for="email">Email: </label><br>
+              <input type="text" name="email"><br>
+            </div>
+            <!-- Comments -->
+            <div class="comment-section">
+              <p>If you have some feedback that could help me improve my website, please leave a comment!</p>
+              <label for="comment">Comments:</label>
+              <textarea class="comments" type="text" name="comment"></textarea>
+            </div>
+            <!-- Form Submit Button -->
+            <input type="submit" class="submit-btn">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

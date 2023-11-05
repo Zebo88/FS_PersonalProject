@@ -1,4 +1,4 @@
-/* Website-wide CSS */
+/***************** Body, Paragraph, Header Rule *****************/
 body {
   background-color: #EDF1D6;
   font-family: 'Signika Negative', sans-serif;
@@ -10,101 +10,49 @@ p {
   font-size: 14pt;
   color: #9DC08B;
 }
+hr {
+  border-style: none;
+  border-top-style: dotted; 
+  border-width: 5px;
+  width: 15%;
+  margin-top: 10px;
+}
+/***************** Navigation Bar *****************/
 .nav-bar {
   background-color: #40513B;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 20px;
 }
 .nav-logo {
-  display: inline-block;
-  text-align: left;
+  justify-content: flex-start;
+  width: 4rem;
 }
 .logo {
-  width: 45%;
-  margin: 10px 20px;
+  width: 100%;
 }
 .nav-links {
-  padding: 20px 10px;
-  text-align: right;
-  display: inline-block;
-  color: #EDF1D6;
+  justify-content: flex-end;
 }
 .nav-links a:link {
   color: #EDF1D6;
   text-decoration: none;
-  margin-left: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.nav-links a:hover {
+  color: #9DC08B;
 }
 .nav-links a:visited {
   color: #EDF1D6;
   text-decoration: none;
 }
-#ancestry {
-  color: #8bab7b;
-}
-#ancestry:hover {
-  text-decoration: #3e4b37;
-}
+/***************** Headers *****************/
 h2 {
   color:#40513B;
-}
-div.bottom-container{
-  margin-top: 5%;
-  background-color:#3e4b37;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  line-height: 2;
-}
-.footer-links-section {
-  width: 50%;
-  margin-left: 25%;
-  text-align: center;
-}
-.footer-link {
-  color:#609966;
-  font-family: 'Montserrat', sans-serif;
-  margin: 10px;
-  text-decoration: none;
-}
-.footer-link:hover {
-  color:#9DC08B;
-}
-.copyright {
-  color: #EDF1D6;
-  font-size: .75rem;
-  margin-left: 25%;
-  width: 50%;
-  text-align: center;
-}
-
-/* Home Page */
-#profile-pic {
-  height: 300px;
-}
-.profile {
-  width: 300px;
-  margin: 50px auto;
-}
-.message {
-  width: 50%;
-  margin: 30px 25% 8% 25%;
-  text-align: center;
-}
-.quote {
-  width: 75%;
-  margin: 0px 12.5% 10% 12.5%;
-  text-align: center;
-}
-.quote h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 4rem;
-}
-
-/* About Page */
-.about-body {
-  padding-bottom: 20px;
 }
 .header {
   width: 90%;
@@ -112,81 +60,98 @@ div.bottom-container{
 }
 .header .page-headers {
   text-align: center;
+  color:#609966;
 }
-.about-content {
-  margin: 10px 10%;
+/***************** Main Content *****************/
+.content-container {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  gap: 0;
 }
-.about-content hr {
-  border-style: dashed;
-}
-.hobbies-section{
-  padding-left: 30px;
-}
-hr {
-  margin-top: 25px;
-}
-.hobbies {
-  width: 70%;
+.content-item {
+  grid-column: 2;
   font-size: 16pt;
-  margin: 30px auto;
-  padding: 1em;
 }
-.baseball, .gamepad {
-  float: right;
-  margin-right: 30px;
-  width: 20%; 
-}
-.weights, .book {
-  float: left;
-  margin-right: 30px;
-  width: 20%; 
-}
-
-/* Portfolio Page */
-.portfolio-body {
-  /* background-color: #8bab7b; */
-}
-.portfolio-header {
-  color: #40513B;
-  text-align: center;
-}
-.project-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.project {
-  width: 70%;
-  font-size: 16pt;
-  margin: 30px auto;
-  padding: 1em;
-}
-.project-image {
+.content-name-image {
   margin: 75px auto;
   text-align: left;
 }
-.html-image, .java-image {
+.image-left {
   float: left;
   margin-right: 30px;
-  width: 20%; 
+  width: 15%; 
 }
-.js-image {
+.image-right {
   float: right;
   margin-right: 30px;
-  width: 20%; 
+  width: 15%; 
 }
-hr {
-  border-style: none;
-  border-top-style: dotted; 
-  border-width: 5px;
-  width: 10%;
-  margin-top: 10px;
+/***************** Footer *****************/
+div.bottom-container{
+  margin-top: 5%;
+  background-color:#3e4b37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+.footer-link {
+  color:#609966;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin: 10px;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color:#9DC08B;
+}
+.footer-link:visited {
+  color:#609966;
+  text-decoration: none;
+}
+.copyright {
+  color: #EDF1D6;
+  font-size: .75rem;
 }
 
-/* Colors:
+/***************** Home Page CSS *****************/
+#profile-pic {
+  width: 40%;
+}
+.hello-message {
+  color: #3e4b37;
+}
+.quote {
+  margin: 0 12.5%;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+}
+/***************** Contact Page *****************/
+label{
+  font-size: 14pt;
+}
+.comments {
+  width: 80%;
+  height: 10vh;
+  display: block;
+}
+/***************** Form Submitted Page *****************/
+.submit-btn {
+display: inline-block;
+}
+.frm-sumbitted {
+  width: fit-content;
+  display:inline-block;
+}
+.smile {
+  width: 20%;
+}
+
+/* Website Colors Scheme for Reference:
   Greens
   Dark: 40513B
   Medium: 609966
   Light: 9DC08B
   Lightest: EDF1D6
-  
-  Creams: */
+*/
