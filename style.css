@@ -147,6 +147,21 @@ display: inline-block;
 .smile {
   width: 20%;
 }
+/* Media Query to change header font size when screen is small (cell phone) */
+@media screen and (max-width: 480px) {
+  h1, .quote {
+    font-size: 25pt;
+  }
+  p {
+    font-size: 12pt;
+  }
+  .content-item {
+    font-size: 12pt;
+  }
+  .footer-link {
+    font-size: 14pt;
+  }
+}
 
 /* Website Colors Scheme for Reference:
   Greens
