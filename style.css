@@ -147,7 +147,8 @@ display: inline-block;
 .smile {
   width: 20%;
 }
-/* Media Query to change header font size when screen is small (cell phone) */
+
+/* Media Query to change font sizes when screen is small (cell phone size). */
 @media screen and (max-width: 480px) {
   h1, .quote {
     font-size: 25pt;
@@ -164,7 +165,7 @@ display: inline-block;
 }
 
 /* Website Colors Scheme for Reference:
-  Greens
+  Greens and Cream
   Dark: 40513B
   Medium: 609966
   Light: 9DC08B
